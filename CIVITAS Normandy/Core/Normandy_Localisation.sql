@@ -43,6 +43,13 @@ VALUES
 	"A heavy cavalry unit unique to Normandy. Starts with the Charge [ICON_Promotion] Promotion and fights at full strength when damaged."),
 
 -----------------------------------------------
+-- Rivers
+-----------------------------------------------
+
+	("en_US", "LOC_NAMED_RIVER_ORNE",  "Orne"	),
+	("en_US", "LOC_NAMED_RIVER_BRESLE",  "Bresle"	),
+
+-----------------------------------------------
 -- Cities
 -----------------------------------------------
 

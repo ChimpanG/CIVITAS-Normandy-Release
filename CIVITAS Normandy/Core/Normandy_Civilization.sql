@@ -18,6 +18,25 @@ VALUES	('CIVILIZATION_CVS_NORMANDY',	'KIND_CIVILIZATION'	);
 INSERT INTO	Civilizations
 		(CivilizationType,				Name,									Description,									Adjective,									StartingCivilizationLevelType,	RandomCityNameDepth,	Ethnicity			)
 VALUES	('CIVILIZATION_CVS_NORMANDY',	'LOC_CIVILIZATION_CVS_NORMANDY_NAME',	'LOC_CIVILIZATION_CVS_NORMANDY_DESCRIPTION',	'LOC_CIVILIZATION_CVS_NORMANDY_ADJECTIVE',	'CIVILIZATION_LEVEL_FULL_CIV',	10,						'ETHNICITY_EURO' 	);
+
+-----------------------------------------------
+-- NamedRivers
+-----------------------------------------------
+
+REPLACE INTO NamedRivers
+		(NamedRiverType,		Name						)
+VALUES	('NAMED_RIVER_ORNE',	'LOC_NAMED_RIVER_ORNE'		),
+		('NAMED_RIVER_BRESLE',	'LOC_NAMED_RIVER_BRESLE'	);
+
+-----------------------------------------------
+-- NamedRiverCivilizations
+-----------------------------------------------
+
+INSERT INTO NamedRiverCivilizations
+		(CivilizationType,				NamedRiverType			)
+VALUES	('CIVILIZATION_CVS_NORMANDY',	'NAMED_RIVER_SEINE'		),
+		('CIVILIZATION_CVS_NORMANDY',	'NAMED_RIVER_ORNE'		),
+		('CIVILIZATION_CVS_NORMANDY',	'NAMED_RIVER_BRESLE'	);
 		
 -----------------------------------------------
 -- CityNames
